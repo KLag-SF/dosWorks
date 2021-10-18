@@ -15,7 +15,7 @@ int main(void){
 
 	server.sin_family = AF_INET;
 	server.sin_port = htons(139);
-	server.sin_addr.s_addr = inet_addr("192.168.101.95");
+	server.sin_addr.s_addr = inet_addr("192.168.56.95");
 	
 	printf("Connecting...");
 	connect(sock, (struct sockaddr *)&server, sizeof(server));
